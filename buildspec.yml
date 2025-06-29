@@ -9,8 +9,8 @@ phases:
     commands:
       - echo Building Docker image...
       - docker build -t dev-app .
-      - docker tag dev-app:latest $ECR_URL/secure-python-app:latest
+      - docker tag dev-app:latest $ECR_URL/dev-repo:latest
   post_build:
     commands:
       - echo Pushing Docker image to Amazon ECR...
-      - docker push $ECR_URL/secure-python-app:latest
+      - docker push $ECR_URL/dev-repo:latest
