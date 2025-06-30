@@ -1,4 +1,5 @@
-FROM python:3.12-slim  # Updated to newer base image to address glibc
+# Updated to newer base image to address glibc
+FROM python:3.12-slim  
 
 WORKDIR /app
 
